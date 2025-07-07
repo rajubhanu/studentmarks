@@ -21,6 +21,6 @@ if (isset($_POST['login'])) {
         Password: <input type="password" name="password" required><br><br>
         <button type="submit" name="login">Login</button>
     </form>
-    <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
+    <?php if (isset($error)) { ?> <p style='color:red;'><?php echo $error; ?> </p> <?php } ?>
 </body>
 </html>
